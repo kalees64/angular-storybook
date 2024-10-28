@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "storybook:build": "build-storybook -c .storybook -o storybook-static",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run angular-storybook:storybook",
