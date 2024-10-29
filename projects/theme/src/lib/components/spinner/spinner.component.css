@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sp-spinner-small-primary {
+  @apply block size-5 rounded-full border-2 border-[var(--primary-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-small-secondary {
+  @apply block size-5 rounded-full border-2 border-[var(--secondary-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-small-success {
+  @apply block size-5 rounded-full border-2 border-[var(--success-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-small-danger {
+  @apply block size-5 rounded-full border-2 border-[var(--danger-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-small-warning {
+  @apply block size-7 rounded-full border-2 border-[var(--warning-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-medium-primary {
+  @apply block size-7 rounded-full border-2 border-[var(--primary-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-medium-secondary {
+  @apply block size-7 rounded-full border-2 border-[var(--secondary-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-medium-success {
+  @apply block size-7 rounded-full border-2 border-[var(--success-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-medium-danger {
+  @apply block size-7 rounded-full border-2 border-[var(--danger-color)] border-t-transparent animate-spin;
+}
+
+.sp-spinner-medium-warning {
+  @apply block size-7 rounded-full border-2 border-[var(--warning-color)] border-t-transparent animate-spin;
+}

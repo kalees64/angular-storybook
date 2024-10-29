@@ -1,4 +1,19 @@
 /* Variables */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Buttons */
+@import "./lib/components/button/button.component.css";
+
+/* Badges */
+@import "./lib/components/badge/badge.component.css";
+
+/* Card */
+@import "./lib/components/card/card.component.css";
+
+/* Spinner */
+@import "./lib/components/spinner/spinner.component.css";
 
 :root {
   /* Primary Colors */

@@ -1,0 +1,27 @@
+@if (!variant && !size) {
+  <article class="sp-card-medium">
+    <span class="sp-card-number-medium">{{ value }}</span>
+    <span class="sp-card-name-medium">{{ label }}</span>
+  </article>
+}
+
+@if (variant && !size) {
+  <article class="sp-card-medium-{{ variant }}">
+    <span class="sp-card-number-medium">{{ value }}</span>
+    <span class="sp-card-name-medium">{{ label }}</span>
+  </article>
+}
+
+@if (!variant && size) {
+  <article class="sp-card-{{ size }}">
+    <span class="sp-card-number-{{ size }}">{{ value }}</span>
+    <span class="sp-card-name-{{ size }}">{{ label }}</span>
+  </article>
+}
+
+@if (variant && size) {
+  <article class="sp-card-{{ size }}-{{ variant }}">
+    <span class="sp-card-number-{{ size }}">{{ value }}</span>
+    <span class="sp-card-name-{{ size }}">{{ label }}</span>
+  </article>
+}

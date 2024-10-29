@@ -1,0 +1,38 @@
+<!-- @if (!variant && !size) {
+  <article class="sp-card">
+    <span class="sp-card-number">{{ value }}</span>
+    <span class="sp-card-name">{{ label }}</span>
+  </article>
+}
+
+@if (variant && !size) {
+  <article class="sp-card-{{ variant }}">
+    <span class="sp-card-number">{{ value }}</span>
+    <span class="sp-card-name">{{ label }}</span>
+  </article>
+}
+
+@if (!variant && size) {
+  <article class="sp-card-{{ size }}">
+    <span class="sp-card-number-{{ size }}">{{ value }}</span>
+    <span class="sp-card-name-{{ size }}">{{ label }}</span>
+  </article>
+}
+
+@if (variant && size) {
+  <article class="sp-card-{{ size }}-{{ variant }}">
+    <span class="sp-card-number-{{ size }}">{{ value }}</span>
+    <span class="sp-card-name-{{ size }}">{{ label }}</span>
+  </article>
+} -->
+
+@if (data && data.data) {
+  <div [ngClass]="classes">
+    @for (widget of data.data; track $index) {
+      <article class="sp-card-{{ size }}-{{ widget.color }}">
+        <span class="sp-card-number-{{ size }}">{{ widget.value }}</span>
+        <span class="sp-card-name-{{ size }}">{{ widget.label }}</span>
+      </article>
+    }
+  </div>
+}

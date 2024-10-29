@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sp-badge-primary {
+  @apply bg-[var(--primary-color)] text-[var(--white)] text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--primary-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-danger {
+  @apply bg-[var(--danger-color)] text-[var(--white)] text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--danger-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-success {
+  @apply bg-[var(--success-color)] text-[var(--white)] text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--success-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-warning {
+  @apply bg-[var(--warning-color)] text-[var(--white)] text-xs font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--warning-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-primary-medium {
+  @apply bg-[var(--primary-color)] text-[var(--white)] text-sm font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--primary-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-danger-medium {
+  @apply bg-[var(--danger-color)] text-[var(--white)] text-sm font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--danger-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-success-medium {
+  @apply bg-[var(--success-color)] text-[var(--white)] text-sm font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--success-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-warning-medium {
+  @apply bg-[var(--warning-color)] text-[var(--white)] text-sm font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--warning-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-primary-big {
+  @apply bg-[var(--primary-color)] text-[var(--white)] text-lg font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--primary-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-danger-big {
+  @apply bg-[var(--danger-color)] text-[var(--white)] text-lg font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--danger-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-success-big {
+  @apply bg-[var(--success-color)] text-[var(--white)] text-lg font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--success-color)] dark:text-[var(--white)];
+}
+
+.sp-badge-warning-big {
+  @apply bg-[var(--warning-color)] text-[var(--white)] text-lg font-medium  px-2.5 py-0.5 rounded dark:bg-[var(--warning-color)] dark:text-[var(--white)];
+}

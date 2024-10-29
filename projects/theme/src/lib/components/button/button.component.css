@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sp-btn {
+  @apply text-[var(--gray-900)] border  focus:outline-none  focus:ring-4 focus:ring-[var(--gray-100)] font-medium rounded-lg text-sm px-5 py-2.5 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer dark:text-[var(--white)];
+}
+
+.sp-btn-link {
+  @apply text-[var(--primary-color)] hover:text-[var(--primary-color-hover)] focus:outline-none   font-medium rounded-lg text-sm px-5 py-2.5 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer dark:text-[var(--primary-color-dark)] dark:hover:text-[var(--primary-color-hover)];
+}
+
+.sp-btn-primary {
+  @apply text-[var(--white)] bg-[var(--primary-color)] hover:bg-[var(--primary-color-hover)] focus:ring-4 focus:ring-[var(--primary-color-active)] font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[var(--primary-color-dark)] dark:hover:bg-[var(--primary-color)] focus:outline-none dark:focus:ring-[var(--primary-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-secondary {
+  @apply text-[var(--white)] bg-[var(--secondary-color)] hover:bg-[var(--secondary-color-hover)] focus:ring-4 focus:ring-[var(--secondary-color-active)] font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[var(--secondary-color-dark)] dark:hover:bg-[var(--secondary-color)] focus:outline-none dark:focus:ring-[var(--secondary-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-success {
+  @apply text-[var(--white)] bg-[var(--success-color)] hover:bg-[var(--success-color-hover)] focus:ring-4 focus:ring-[var(--success-color-active)] font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[var(--success-color-dark)] dark:hover:bg-[var(--success-color)] focus:outline-none dark:focus:ring-[var(--success-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-danger {
+  @apply text-[var(--white)] bg-[var(--danger-color)] hover:bg-[var(--danger-color-hover)] focus:ring-4 focus:ring-[var(--danger-color-active)] font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[var(--danger-color-dark)] dark:hover:bg-[var(--danger-color)] focus:outline-none dark:focus:ring-[var(--danger-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-warning {
+  @apply text-[var(--white)] bg-[var(--warning-color)] hover:bg-[var(--warning-color-hover)] focus:ring-4 focus:ring-[var(--warning-color-active)] font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[var(--warning-color-dark)] dark:hover:bg-[var(--warning-color)] focus:outline-none dark:focus:ring-[var(--warning-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-info {
+  @apply text-[var(--white)] bg-[var(--info-color)] hover:bg-[var(--info-color-hover)] focus:ring-4 focus:ring-[var(--info-color-active)] font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[var(--info-color-dark)] dark:hover:bg-[var(--info-color)] focus:outline-none dark:focus:ring-[var(--info-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-small {
+  @apply text-[var(--gray-900)] border  focus:outline-none  focus:ring-4 focus:ring-[var(--gray-100)] font-medium rounded-lg text-xs px-2.5 py-1.5 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer dark:text-[var(--white)];
+}
+
+.sp-btn-big {
+  @apply text-[var(--gray-900)] border  focus:outline-none  focus:ring-4 focus:ring-[var(--gray-100)] font-medium rounded-lg text-lg px-5 py-3 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer dark:text-[var(--white)];
+}
+
+.sp-btn-link-small {
+  @apply text-[var(--primary-color)] hover:text-[var(--primary-color-hover)] focus:outline-none   font-medium rounded-lg text-xs px-2.5 py-1.5 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer dark:text-[var(--primary-color-dark)] dark:hover:text-[var(--primary-color-hover)];
+}
+
+.sp-btn-primary-small {
+  @apply text-[var(--white)] bg-[var(--primary-color)] hover:bg-[var(--primary-color-hover)] focus:ring-4 focus:ring-[var(--primary-color-active)] font-medium rounded-lg text-xs px-2.5 py-1.5 dark:bg-[var(--primary-color-dark)] dark:hover:bg-[var(--primary-color)] focus:outline-none dark:focus:ring-[var(--primary-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-secondary-small {
+  @apply text-[var(--white)] bg-[var(--secondary-color)] hover:bg-[var(--secondary-color-hover)] focus:ring-4 focus:ring-[var(--secondary-color-active)] font-medium rounded-lg text-xs px-2.5 py-1.5 dark:bg-[var(--secondary-color-dark)] dark:hover:bg-[var(--secondary-color)] focus:outline-none dark:focus:ring-[var(--secondary-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-success-small {
+  @apply text-[var(--white)] bg-[var(--success-color)] hover:bg-[var(--success-color-hover)] focus:ring-4 focus:ring-[var(--success-color-active)] font-medium rounded-lg text-xs px-2.5 py-1.5 dark:bg-[var(--success-color-dark)] dark:hover:bg-[var(--success-color)] focus:outline-none dark:focus:ring-[var(--success-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-danger-small {
+  @apply text-[var(--white)] bg-[var(--danger-color)] hover:bg-[var(--danger-color-hover)] focus:ring-4 focus:ring-[var(--danger-color-active)] font-medium rounded-lg text-xs px-2.5 py-1.5 dark:bg-[var(--danger-color-dark)] dark:hover:bg-[var(--danger-color)] focus:outline-none dark:focus:ring-[var(--danger-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-warning-small {
+  @apply text-[var(--white)] bg-[var(--warning-color)] hover:bg-[var(--warning-color-hover)] focus:ring-4 focus:ring-[var(--warning-color-active)] font-medium rounded-lg text-xs px-2.5 py-1.5 dark:bg-[var(--warning-color-dark)] dark:hover:bg-[var(--warning-color)] focus:outline-none dark:focus:ring-[var(--warning-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-info-small {
+  @apply text-[var(--white)] bg-[var(--info-color)] hover:bg-[var(--info-color-hover)] focus:ring-4 focus:ring-[var(--info-color-active)] font-medium rounded-lg text-xs px-2.5 py-1.5 dark:bg-[var(--info-color-dark)] dark:hover:bg-[var(--info-color)] focus:outline-none dark:focus:ring-[var(--info-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-link-big {
+  @apply text-[var(--primary-color)] hover:text-[var(--primary-color-hover)] focus:outline-none   font-medium rounded-lg text-lg px-5 py-3 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer dark:text-[var(--primary-color-dark)] dark:hover:text-[var(--primary-color-hover)];
+}
+
+.sp-btn-primary-big {
+  @apply text-[var(--white)] bg-[var(--primary-color)] hover:bg-[var(--primary-color-hover)] focus:ring-4 focus:ring-[var(--primary-color-active)] font-medium rounded-lg text-lg px-5 py-3 dark:bg-[var(--primary-color-dark)] dark:hover:bg-[var(--primary-color)] focus:outline-none dark:focus:ring-[var(--primary-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-secondary-big {
+  @apply text-[var(--white)] bg-[var(--secondary-color)] hover:bg-[var(--secondary-color-hover)] focus:ring-4 focus:ring-[var(--secondary-color-active)] font-medium rounded-lg text-lg px-5 py-3 dark:bg-[var(--secondary-color-dark)] dark:hover:bg-[var(--secondary-color)] focus:outline-none dark:focus:ring-[var(--secondary-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-success-big {
+  @apply text-[var(--white)] bg-[var(--success-color)] hover:bg-[var(--success-color-hover)] focus:ring-4 focus:ring-[var(--success-color-active)] font-medium rounded-lg text-lg px-5 py-3 dark:bg-[var(--success-color-dark)] dark:hover:bg-[var(--success-color)] focus:outline-none dark:focus:ring-[var(--success-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-danger-big {
+  @apply text-[var(--white)] bg-[var(--danger-color)] hover:bg-[var(--danger-color-hover)] focus:ring-4 focus:ring-[var(--danger-color-active)] font-medium rounded-lg text-lg px-5 py-3 dark:bg-[var(--danger-color-dark)] dark:hover:bg-[var(--danger-color)] focus:outline-none dark:focus:ring-[var(--danger-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-warning-big {
+  @apply text-[var(--white)] bg-[var(--warning-color)] hover:bg-[var(--warning-color-hover)] focus:ring-4 focus:ring-[var(--warning-color-active)] font-medium rounded-lg text-lg px-5 py-3 dark:bg-[var(--warning-color-dark)] dark:hover:bg-[var(--warning-color)] focus:outline-none dark:focus:ring-[var(--warning-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}
+
+.sp-btn-info-big {
+  @apply text-[var(--white)] bg-[var(--info-color)] hover:bg-[var(--info-color-hover)] focus:ring-4 focus:ring-[var(--info-color-active)] font-medium rounded-lg text-lg px-5 py-3 dark:bg-[var(--info-color-dark)] dark:hover:bg-[var(--info-color)] focus:outline-none dark:focus:ring-[var(--info-color-hover)] disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer;
+}

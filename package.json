@@ -8,9 +8,12 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run angular-storybook:storybook",
-    "build-storybook": "ng run angular-storybook:build-storybook"
+    "build-storybook": "ng run angular-storybook:build-storybook",
+    "build:theme": "ng build theme && npx tailwindcss -i ./projects/theme/src/styles.css -o dist/theme/index.css --minify && npm run build:pack",
+    "build:css": "npx tailwindcss -i ./projects/theme/src/styles.css -o .dist/index.css --minify ",
+    "build:pack": "cd ./dist/theme && npm pack"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
@@ -20,6 +23,7 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "cpr": "^3.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -45,6 +49,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.2.0",
     "postcss": "^8.4.47",
     "storybook": "^8.3.6",
     "tailwindcss": "^3.4.14",

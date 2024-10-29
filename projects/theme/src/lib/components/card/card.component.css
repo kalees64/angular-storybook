@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sp-card-medium {
+  @apply p-5 rounded-lg border text-end text-[var(--black)] shadow;
+}
+
+.sp-card-number-medium {
+  @apply block text-4xl font-bold;
+}
+
+.sp-card-name-medium {
+  @apply block pt-2;
+}
+
+.sp-card-small {
+  @apply p-3.5 rounded-lg border text-end text-[var(--black)] shadow;
+}
+
+.sp-card-number-small {
+  @apply block text-2xl font-bold;
+}
+
+.sp-card-name-small {
+  @apply block pt-1;
+}
+
+.sp-card-medium-primary {
+  @apply p-5 rounded-lg bg-[var(--primary-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-medium-secondary {
+  @apply p-5 rounded-lg bg-[var(--secondary-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-medium-success {
+  @apply p-5 rounded-lg bg-[var(--success-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-medium-danger {
+  @apply p-5 rounded-lg bg-[var(--danger-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-medium-warning {
+  @apply p-5 rounded-lg bg-[var(--warning-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-medium-info {
+  @apply p-5 rounded-lg bg-[var(--info-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-small-primary {
+  @apply p-3.5  rounded-lg bg-[var(--primary-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-small-secondary {
+  @apply p-3.5  rounded-lg bg-[var(--secondary-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-small-success {
+  @apply p-3.5  rounded-lg bg-[var(--success-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-small-danger {
+  @apply p-3.5  rounded-lg bg-[var(--danger-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-small-warning {
+  @apply p-3.5  rounded-lg bg-[var(--warning-color)] text-end text-[var(--white)] shadow;
+}
+
+.sp-card-small-info {
+  @apply p-3.5  rounded-lg bg-[var(--info-color)] text-end text-[var(--white)] shadow;
+}
