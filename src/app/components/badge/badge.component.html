@@ -1,0 +1,7 @@
+@if (variant && size) {
+  <span class="sp-badge-{{ variant }}-{{ size }}">{{ label }}</span>
+}
+
+@if (variant && !size) {
+  <span class="sp-badge-{{ variant }}">{{ label }}</span>
+}

@@ -2,9 +2,12 @@ import { Meta, StoryObj } from '@storybook/angular';
 import { ButtonComponent } from '../app/components/button/button.component';
 
 const meta: Meta<ButtonComponent> = {
-  title: 'Button Components',
+  title: 'Button',
   component: ButtonComponent,
   tags: ['autodocs'],
+  argTypes: {
+    onBtnClick: { action: 'clicked' },
+  },
 };
 
 export default meta;
@@ -20,48 +23,82 @@ export const Default: Story = {
 export const ButtonLink: Story = {
   args: {
     label: 'Button Link',
-    variant: 'sp-btn-link',
+    variant: 'link',
   },
 };
 
 export const Primary: Story = {
   args: {
     label: 'Primary Button',
-    variant: 'sp-btn-primary',
+    variant: 'primary',
   },
 };
 
 export const Secondary: Story = {
   args: {
     label: 'Secondary Button',
-    variant: 'sp-btn-secondary',
+    variant: 'secondary',
   },
 };
 
 export const Success: Story = {
   args: {
     label: 'Success Button',
-    variant: 'sp-btn-success',
+    variant: 'success',
   },
 };
 
 export const Danger: Story = {
   args: {
     label: 'Danger Button',
-    variant: 'sp-btn-danger',
+    variant: 'danger',
+    onBtnClick: () => {
+      alert('Danger Button');
+      console.log('Button clicked');
+    },
   },
 };
 
 export const Warning: Story = {
   args: {
     label: 'Warning Button',
-    variant: 'sp-btn-warning',
+    variant: 'warning',
   },
 };
 
 export const Info: Story = {
   args: {
     label: 'Info Button',
-    variant: 'sp-btn-info',
+    variant: 'info',
+  },
+};
+
+export const Small: Story = {
+  args: {
+    label: 'Small Button',
+    variant: 'small',
+  },
+};
+
+export const Big: Story = {
+  args: {
+    label: 'Big Button',
+    variant: 'big',
+  },
+};
+
+export const PrimarySmall: Story = {
+  args: {
+    label: 'Primary Small Button',
+    variant: 'primary',
+    size: 'small',
+  },
+};
+
+export const PrimaryBig: Story = {
+  args: {
+    label: 'Primary Big Button',
+    variant: 'primary',
+    size: 'big',
   },
 };

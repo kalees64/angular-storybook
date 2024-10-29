@@ -1,1 +1,21 @@
-<button [type]="type" class="{{ size }} {{ variant }}">{{ label }}</button>
+@if (variant && size) {
+  <button
+    [type]="type"
+    class="sp-btn-{{ variant }}-{{ size }}"
+    (click)="onClick()"
+  >
+    {{ label }}
+  </button>
+} @else if (variant && !size) {
+  <button [type]="type" class="sp-btn-{{ variant }}" (click)="onClick()">
+    {{ label }}
+  </button>
+} @else if (!variant && size) {
+  <button [type]="type" class="sp-btn-{{ size }}" (click)="onClick()">
+    {{ label }}
+  </button>
+} @else {
+  <button [type]="type" class="sp-btn" (click)="onClick()">
+    {{ label }}
+  </button>
+}

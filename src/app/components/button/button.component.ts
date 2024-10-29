@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'tw-button',
@@ -9,7 +9,13 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() type: string = 'button';
-  @Input() label?: string;
-  @Input() variant: string = 'sp-btn';
-  @Input() size: string = '';
+  @Input({ required: true }) label?: string;
+  @Input() variant?: string;
+  @Input() size?: string;
+
+  @Output() onBtnClick = new EventEmitter();
+
+  onClick() {
+    this.onBtnClick.emit();
+  }
 }

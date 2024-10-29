@@ -11,4 +11,8 @@ import { ButtonComponent } from './components/button/button.component';
 })
 export class AppComponent {
   title = 'angular-storybook';
+
+  onClickBtn() {
+    alert('Btn clicked');
+  }
 }
