@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sp-header-dark {
+  @apply bg-[var(--black)] text-[var(--white)];
+}
+.sp-header-dark > a {
+  @apply hover:text-[var(--white)] hover:bg-[var(--gray-800)];
+}
+
+.sp-header-primary {
+  @apply bg-[var(--primary-color)] text-[var(--white)];
+}
+.sp-header-primary > a {
+  @apply hover:text-[var(--black)] hover:bg-[var(--primary-color-hover)];
+}
+.sp-header-primary > div > div > a {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-primary > div > div > button {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-primary > div > button {
+  @apply hover:text-[var(--black)];
+}
+
+.sp-header-light {
+  @apply bg-[var(--white)] text-[var(--black)] shadow;
+}
+.sp-header-light > a {
+  @apply hover:text-[var(--gray-900)] hover:bg-[var(--gray-200)];
+}
+.sp-header-light > div > div > a {
+  @apply hover:text-[var(--gray-600)];
+}
+.sp-header-light > div > div > button {
+  @apply hover:text-[var(--gray-600)];
+}
+.sp-header-light > div > button {
+  @apply hover:text-[var(--gray-600)];
+}
+
+.sp-header-success {
+  @apply bg-[var(--success-color)] text-[var(--white)];
+}
+.sp-header-success > a {
+  @apply hover:text-[var(--black)] hover:bg-[var(--success-color-hover)];
+}
+.sp-header-success > div > div > a {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-success > div > div > button {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-success > div > button {
+  @apply hover:text-[var(--black)];
+}
+
+.sp-header-danger {
+  @apply bg-[var(--danger-color)] text-[var(--white)];
+}
+.sp-header-danger > a {
+  @apply hover:text-[var(--black)] hover:bg-[var(--danger-color-hover)];
+}
+.sp-header-danger > div > div > a {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-danger > div > div > button {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-danger > div > button {
+  @apply hover:text-[var(--black)];
+}
+
+.sp-header-warning {
+  @apply bg-[var(--warning-color)] text-[var(--white)];
+}
+.sp-header-warning > a {
+  @apply hover:text-[var(--black)] hover:bg-[var(--warning-color-hover)];
+}
+.sp-header-warning > div > div > a {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-warning > div > div > button {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-warning > div > button {
+  @apply hover:text-[var(--black)];
+}
+
+.sp-header-info {
+  @apply bg-[var(--info-color)] text-[var(--white)];
+}
+.sp-header-info > a {
+  @apply hover:text-[var(--black)] hover:bg-[var(--info-color-hover)];
+}
+.sp-header-info > div > div > a {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-info > div > div > button {
+  @apply hover:text-[var(--black)];
+}
+.sp-header-info > div > button {
+  @apply hover:text-[var(--black)];
+}

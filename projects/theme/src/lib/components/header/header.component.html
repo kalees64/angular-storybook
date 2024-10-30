@@ -1,0 +1,160 @@
+<!-- <div class="w-full m-0 px-2 py-3 bg-cyan-500 flex items-center justify-between">
+  <div class="flex gap-2 items-center">
+    <div>
+      <a href="#" class="flex gap-1 items-center">
+        <img
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/brand-3d-icon-download-in-png-blend-fbx-gltf-file-formats--branding-badge-star-tag-customer-loyalty-pack-e-commerce-shopping-icons-5966342.png?f=webp"
+          alt="Image 1"
+          class="size-10"
+        />
+        <h1 class="text-xl font-bold">Brand</h1>
+      </a>
+    </div>
+    <div>
+      <ul class="flex gap-2 items-center">
+        <li>
+          <a href="#" class="text-gray-900 hover:text-white">Home</a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-900 hover:text-white">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex items-center gap-2">
+    <div>
+      <a href="#" class="flex items-center gap-2">
+        <img
+          src="https://www.transparentpng.com/download/user/blak-frame-user-profile-png-icon--cupR3D.png"
+          alt="Profile"
+          class="size-7"
+        />
+        <h2>Name</h2>
+      </a>
+    </div>
+    <div>
+      <tw-button label="Logout" variant="dark"></tw-button>
+    </div>
+  </div>
+</div> -->
+
+<header
+  class="w-full sp-header-{{ variant }} flex items-center justify-between p-4"
+>
+  <!-- Brand Section -->
+  <div class="flex items-center space-x-4">
+    @if (brand.logo) {
+      <img [src]="brand.logo" alt="{{ brand.name }}" class="w-8 h-8" />
+    }
+
+    @if (brand.icon) {
+      <i class="size-8" [attr.data-feather]="brand.icon"></i>
+    }
+    <span class="text-lg font-semibold">{{ brand.name }}</span>
+
+    <!-- Left Navigation Links -->
+    <div *ngIf="leftNavLinks.length > 0" class="ml-6 hidden lg:flex space-x-4">
+      <ng-container *ngFor="let link of leftNavLinks">
+        @if (link.visible) {
+          <a [href]="link.url" class="hover:text-gray-400">{{ link.label }}</a>
+        }
+      </ng-container>
+    </div>
+  </div>
+
+  <!-- Right Navigation Links and Profile Section -->
+  <div class="flex items-center space-x-4">
+    <!-- Right Navigation Links -->
+    <div *ngIf="rightNavLinks.length > 0" class="hidden lg:flex space-x-4">
+      <ng-container *ngFor="let link of rightNavLinks">
+        @if (link.visible) {
+          <a [href]="link.url" class="hover:text-gray-400">{{ link.label }}</a>
+        }
+      </ng-container>
+    </div>
+
+    <!-- Profile Section -->
+    @if (profile.visible) {
+      <div
+        *ngIf="profile.icon && profile.position === 'right'"
+        class="max-lg:hidden flex items-center space-x-2"
+      >
+        @if (profile.img) {
+          <img [src]="profile.img" alt="Profile" class="w-8 h-8 rounded-full" />
+        }
+        @if (profile.icon) {
+          <i class="size-5 rounded-full" [attr.data-feather]="profile.icon"></i>
+        }
+        <span class="hidden lg:inline">{{ profile.name }}</span>
+        <button
+          class="flex items-center gap-1 hover:text-gray-400"
+          (click)="profile.logoutFn ? profile.logoutFn() : null"
+        >
+          <i class="size-4" data-feather="log-out"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    } @else {
+      <div class="max-lg:hidden flex items-center space-x-2">
+        <a [href]="profile.loginURL" class="hover:text-gray-400">Login</a>
+        <a [href]="profile.signupURL" class="hover:text-gray-400">Sign up</a>
+      </div>
+    }
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="lg:hidden flex space-x-4">
+    <button class="text-lg hover:text-gray-400" (click)="toggleMobileNav()">
+      <i class="size-8" data-feather="menu"></i>
+    </button>
+  </div>
+
+  <div
+    *ngIf="showMobileNav"
+    class="lg:hidden absolute top-16 left-0 w-full sp-header-{{
+      variant
+    }} p-4 gap-2"
+  >
+    <!-- Left and Right Links -->
+    <ng-container *ngFor="let link of navLinks">
+      @if (link.visible) {
+        <a [href]="link.url" class="block hover:text-gray-400 py-2 px-1">{{
+          link.label
+        }}</a>
+      }
+    </ng-container>
+    <!-- Profile Section -->
+    @if (profile.visible) {
+      <div *ngIf="profile.icon" class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          @if (profile.img) {
+            <img
+              [src]="profile.img"
+              alt="Profile"
+              class="w-8 h-8 rounded-full"
+            />
+          }
+          @if (profile.icon) {
+            <i
+              class="size-5 rounded-full"
+              [attr.data-feather]="profile.icon"
+            ></i>
+          }
+          <span>{{ profile.name }}</span>
+        </div>
+        <button
+          class="flex items-center hover:text-gray-400"
+          (click)="profile.logoutFn ? profile.logoutFn() : null"
+        >
+          <i class="size-6 rotate-180" data-feather="log-out"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    } @else {
+      <div class="flex flex-col gap-3">
+        <a [href]="profile.loginURL" class="hover:text-gray-400">Login</a>
+        <a [href]="profile.signupURL" class="hover:text-gray-400">Sign up</a>
+      </div>
+    }
+  </div>
+</header>
